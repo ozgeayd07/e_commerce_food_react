@@ -1,0 +1,36 @@
+/* Restaurant.css */
+
+/* Container */
+.MuiContainer-root {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+  }
+  
+  /* Category Buttons */
+  .MuiButton-root {
+    color: white;
+    border-radius: 8px;
+  }
+  
+  /* Restaurant Cards */
+  .MuiCard-root {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: auto;
+    margin: auto;
+    border-radius: 8px;
+  }
+  
+  /* Restaurant Images */
+  .MuiCardMedia-root {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Restaurant Names */
+  .MuiTypography-h6 {
+    font-size: 1.2rem;
+  }
+  

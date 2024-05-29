@@ -1,0 +1,24 @@
+
+.sepet-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .sepet-listesi {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sepet-urun {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .toplam-fiyat {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  

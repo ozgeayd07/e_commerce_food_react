@@ -1,0 +1,53 @@
+.İmageHeader {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .mainPage {
+    position: relative;
+    transform: translateY(-800%);
+    margin-left: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  
+  .mainPageSpan {
+    color: #a51c30;
+  }
+  
+  .mainPage2 {
+    position: relative;
+    transform: translateY(-550%);
+    margin-left: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20px;
+  }
+  
+  .HeaderButton {
+    position: relative;
+    transform: translateY(-1250%);
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 5.2px;
+   
+  }
+  
+  .HeaderButton:hover {
+    background-color: #861b28;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .mainPage,
+    .mainPage2 {
+      margin-left: 10px;
+      font-size: 16px;
+    }
+  
+    .HeaderButton {
+      margin-left: 10px;
+      transform: translateY(-1000%);
+    }
+  }
+  

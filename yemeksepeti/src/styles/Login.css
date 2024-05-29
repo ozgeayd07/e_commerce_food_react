@@ -1,0 +1,79 @@
+.body {
+    font-family: Arial, sans-serif;
+    background-color:none;
+    background-image: url('../image/banner3.jpg');
+    background-size:cover; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formLogin {
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+}
+
+.Loginh2 {
+    position: absolute;
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 150px;
+    justify-content: center;
+    margin-bottom:400px;
+    font-size: 25px;
+    color: white;
+    
+
+}
+
+.formlabel{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.email, .password {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color:#a51c30;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #861b28;
+}
+
+.link {
+    text-decoration: none;
+    color: #c52233;
+}
+
+
+/* .Loginh2 {
+    position: absolute;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 150px;
+    justify-content: center;
+    margin-bottom:400px;
+    
+
+} */

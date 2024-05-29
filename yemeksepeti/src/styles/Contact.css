@@ -1,0 +1,24 @@
+
+.ContainerContacts {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Form */
+  .formContact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Text Fields */
+  .MuiTextField-root {
+    width: 100%;
+  }
+  
+  /* Submit Button */
+  .MuiButton-root {
+    width: 100%;
+  }
+  
