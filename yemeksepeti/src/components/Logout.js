@@ -11,7 +11,6 @@ function Logout() {
 
   return (
     <div>
-      <h2>Oturumu Kapat</h2>
       <Button variant="contained" color="error" onClick={handleLogout}>
         Oturumu Kapat
       </Button>

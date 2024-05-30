@@ -1,24 +1,15 @@
 import { gql } from '@apollo/client';
 
 export const USER_ADD = gql`
-mutation kullaniciEkle($email: String!, $hesapTipi: String!, $isim: String!, $sifre: String!, $sifreDogrulama: String!, $soyisim: String!) {
-  KullaniciEkle( email: $email, hesapTipi: $hesapTipi, isim: $isim, sifre: $sifre, sifreDogrulama: $sifreDogrulama, soyisim: $soyisim) {
-    id
-    isim
-    soyisim
-    email
-    sifre
-    sifreDogrulama
-    hesapTipi
-    teslimatadresiSet {
-      id
-      il
-      ilce
-      mahalle
-      cadde
-      bina
-      kapi
-      
+mutation kullaniciEkle($email: String!, $hesapTipi: String!, $isim: String!, $sifre: String!, $soyisim: String!, $telefonNo: String!) {
+  kullaniciEkle(email: $email, hesapTipi: $hesapTipi, isim: $isim, sifre: $sifre, soyisim: $soyisim, telefonNo: $telefonNo) {
+    kullanici {
+      email
+      hesapTipi
+      isim
+      sifre
+      soyisim
+      telefonNo
     }
   }
 }

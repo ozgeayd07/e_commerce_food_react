@@ -8,7 +8,7 @@ query kategoriler {
     urunSet{
       id
       name
-      image
+      resim
       fiyat
       detay
       category{
@@ -85,30 +85,13 @@ query restoranlar {
            name
            image
            fiyat
-           siparisdetaySet{
-            id
-            miktar
-            toplamTutar
-            siparis{
-              id
-              siparisTarihi
-              teslimTarihi
-              tutar
-              durum
-              siparisDetaylari{
-                id
-                miktar
-                toplamTutar
-                
-              }
+
             }
           }
         }
       }
     
     }
-  }
-}
 
 `;
 
@@ -128,35 +111,12 @@ query teslimatlar
 }}
 
 `;
-export const GET_ORDER_DETAİL=gql`
-query siparisDetay{
-  siparisDetay{
-    id
-    miktar
-    toplamTutar
-    siparis{
-      id
-      siparisTarihi
-      teslimTarihi
-      tutar
-      durum
-    }
-  }
-}
 
-`;
 export const GET_ORDER=gql`
 query siparisler {
   siparisler {
-    siparisDetaylari {
-      miktar
-      toplamTutar
-      urun {
-        name
-        fiyat
-        image
-      }
-    }
+    id
+    toplamTutar
   }
 }
 `;

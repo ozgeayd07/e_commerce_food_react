@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextField, Button, Typography, Container, Box } from '@mui/material';
-import Image from '../image/contact.jpg'; // Resminizin yolunu belirtin
+import Image from '../image/contact.jpg'; 
 
 const ContactPage = () => {
     return (

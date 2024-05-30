@@ -54,6 +54,7 @@ function Restaurant() {
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
   };
+  console.log(restaurantsData)
 
   return (
     <Grid container spacing={2}>
@@ -80,7 +81,8 @@ function Restaurant() {
                 <Grid item xs={12} sm={6} md={4} lg={3}>
                   <StyledLink key={restaurant.id} to={`/RestaurantDetail/${restaurant.id}`}>
                     <RestaurantCard>
-                      <img src={restaurant.resim} alt={restaurant.name} />
+                      <img src={restaurant?.resim} alt={restaurant.name} />
+                      
                       <p>Açılış ve Kapanış Saatleri: {restaurant.acilisSaati} - {restaurant.kapanisSaati}</p>
                       <Rating name="read-only" value={restaurant.puan} readOnly />
                       <p>Minimum Sipariş Tutarı: {restaurant.minTutar}₺</p>

@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, increaseQuantity, decreaseQuantity } from '../cartSlice/cartSlice';
 import { useQuery } from '@apollo/client';
-import { GET_PRODUCTS_BY_RESTAURANT } from '../GraphQL/queries';
+import { GET_PRODUCTS_BY_RESTAURANT} from '../GraphQL/queries';
 import { Container, Typography, List, ListItem, ListItemText, Button, Box, Paper, Divider, ListItemAvatar, Avatar } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
@@ -64,7 +64,7 @@ const Cart = () => {
                                                 primary={`${product.name} - ${product.fiyat}₺`}
                                                 secondary={`Adet: ${item.quantity}`}
                                             />
-                                            <Box sx={{ marginTop: 1, '& > *': { margin: '0 8px' } }}>
+                                            <Box sx={{ marginTop: 1, '& > *': { margin: '5px' } }}>
                                                 <Button onClick={() => handleIncrease(item.id)} variant="contained" color="error">+</Button>
                                                 <Button onClick={() => handleDecrease(item.id)} variant="contained" color="error">-</Button>
                                                 <Button onClick={() => handleRemove(item.id)} variant="contained" color="error">X</Button>

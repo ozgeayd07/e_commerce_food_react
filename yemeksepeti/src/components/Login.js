@@ -29,9 +29,9 @@ function Login() {
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
-      const { data } = await login({ variables: { email, password } });
+      const { data } = await login({ variables: { email,sifre: password } });
       console.log("Giriş yapıldı: ", data.login);
-      navigate('/profile');
+      navigate('/');
     } catch (error) {
       console.error("Giriş hatası: ", error);
     }
@@ -75,6 +75,7 @@ function Login() {
                 }
                 label="Şifre Giriniz"
                 size="small"
+                value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
               <FormHelperText>Şifrenizi Giriniz.</FormHelperText>

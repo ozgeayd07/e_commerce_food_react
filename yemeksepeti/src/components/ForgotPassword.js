@@ -6,7 +6,7 @@ import '../styles/ForgotPassword.css'
 
 function ForgotPasswordPage() {
   const [email, setEmail] = useState("");
-  const token = localStorage.getItem('jwtToken'); // JWT token'ını yerel depolamadan alın
+  const token = localStorage.getItem('jwtToken'); 
 
   const handleResetPassword = async (event) => {
     event.preventDefault();
@@ -14,7 +14,7 @@ function ForgotPasswordPage() {
     try {
       const response = await axios.post('/api/forgot-password', { email }, {
         headers: {
-          'Authorization': `Bearer ${token}` // JWT token'ını isteğin başlıklarına ekleyin
+          'Authorization': `Bearer ${token}` 
         }
       });
       
